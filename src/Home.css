@@ -1,0 +1,129 @@
+/* 전체 페이지 스타일 */
+.home-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+.logo{
+    margin-top: 0px;
+    font-family: fantasy;
+}
+
+  /* 헤더 스타일 */
+  .header {
+    text-align: left;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
+  /* 프로필 섹션 */
+  .profile-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .quick-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  
+  .quick-actions button {
+    padding: 8px;
+    border-radius: 8px;
+    background: #f0f0f0;
+    border: none;
+  }
+  
+  /* 운동 추천 */
+  .exercise-section {
+    margin-top: 20px;
+  }
+  
+  .exercise-cards {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .exercise-card {
+    width: 100px;
+    text-align: center;
+  }
+  
+  .exercise-card img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  /* 정신과 정보 */
+  .nearby-clinics {
+    margin-top: 20px;
+  }
+  
+  .clinic {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .more-btn {
+    display: block;
+    margin: auto;
+    background: #ddd;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  /* 배너 */
+  .info-banner img {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* 검색 바 */
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .search-bar button {
+    padding: 8px;
+    margin-left: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  /* 활동 요약 */
+  .activity-summary {
+    text-align: center;
+  }
+  
+  .activity-box {
+    display: inline-block;
+    width: 45%;
+    background: #f0f0f0;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+  }
+  
