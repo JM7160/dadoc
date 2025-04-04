@@ -1,6 +1,10 @@
 import React from "react";
 import "./Home.css";
 import profileImg from "./image/profile.jpg";
+import med from "./image/med.png";
+import hos from "./image/hos.png";
+import sos from "./image/sos.png";
+import alarm from "./image/alarm.png";
 
 const Home = () => {
   return (
@@ -13,19 +17,30 @@ const Home = () => {
         <div className="profile-info">
           <img src={profileImg} alt="Profile" className="profile-img" />
           <div>
-            <h2>심정민</h2>
+            <h3>심정민</h3>
             <p>19세(만 17세)</p>
           </div>
         </div>
         <div className="quick-actions">
-          <button>우울증 약 정보</button>
-          <button>주변 정신과 찾기</button>
-          <button>긴급 도움 서비스</button>
-          <button>약 복용 알림</button>
-        </div>
+        <button>
+          <img src={med} alt="약 정보" className="button-icon" />
+          우울증 약 정보
+        </button>
+        <button>
+          <img src={hos} alt="정신과 찾기" className="button-icon" />
+          주변 정신과 찾기
+        </button>
+        <button>
+          <img src={sos} alt="긴급 도움" className="button-icon" />
+          긴급 도움 서비스
+        </button>
+        <button>
+          <img src={alarm} alt="약 복용 알림" className="button-icon" />
+          약 복용 알림
+        </button>
+      </div>
       </section>
 
-      {/* 가벼운 운동 추천 */}
       <section className="exercise-section">
         <h2>가벼운 운동 추천</h2>
         <div className="exercise-cards">
@@ -42,7 +57,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 주변 정신과 안내 */}
       <section className="nearby-clinics">
         <h2>주변 정신과 안내</h2>
         <div className="clinic">
@@ -56,18 +70,15 @@ const Home = () => {
         <button className="more-btn">더보기</button>
       </section>
 
-      {/* 우울증 정보 배너 */}
       <section className="info-banner">
         <img src="path_to_banner_image" alt="우울증 정보" />
       </section>
 
-      {/* 검색 바 */}
       <section className="search-bar">
         <input type="text" placeholder="주변 운동시설 검색" />
         <button>🔍</button>
       </section>
 
-      {/* 이번 달 활동량 */}
       <section className="activity-summary">
         <h2>이번 달 활동량</h2>
         <div className="activity-box">
