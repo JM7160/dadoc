@@ -5,6 +5,17 @@ import med from "./image/med.png";
 import hos from "./image/hos.png";
 import sos from "./image/sos.png";
 import alarm from "./image/alarm.png";
+import stretch from "./image/stretch.png";
+import running from "./image/running.png";
+import pin from "./image/pin.png";
+import search from "./image/search.png"
+import deinfo1 from "./image/deinfo1.jpg"
+import deinfo2 from "./image/deinfo2.jpg"
+import deinfo3 from "./image/deinfo3.jpg"
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 
 const Home = () => {
   return (
@@ -45,12 +56,14 @@ const Home = () => {
         <h2>가벼운 운동 추천</h2>
         <div className="exercise-cards">
           <div className="exercise-card">
-            <img src="path_to_stretching_image" alt="Stretching" />
+          <div className="exercise-tag">운동</div>
+            <img src={stretch} alt="Stretching" />
             <p>스트레칭</p>
             <span>15분</span>
           </div>
           <div className="exercise-card">
-            <img src="path_to_running_image" alt="Running" />
+          <div className="exercise-tag">운동</div>
+            <img src={running} alt="Running" />
             <p>산책</p>
             <span>30분</span>
           </div>
@@ -58,26 +71,51 @@ const Home = () => {
       </section>
 
       <section className="nearby-clinics">
-        <h2>주변 정신과 안내</h2>
-        <div className="clinic">
-          <p>마음샘정신건강의학과의원</p>
-          <span>거리: 1.2km</span>
-        </div>
-        <div className="clinic">
-          <p>야호정신건강의학과의원</p>
-          <span>거리: 2.5km</span>
-        </div>
-        <button className="more-btn">더보기</button>
-      </section>
+  <h2>주변 정신과 안내</h2>
 
-      <section className="info-banner">
-        <img src="path_to_banner_image" alt="우울증 정보" />
-      </section>
+  <div className="clinic">
+    <div className="clinic-left">
+      <img src={pin} alt="위치 아이콘" className="pin-icon" />
+      <div className="clinic-info">
+        <p>마음챙김정신건강의학과의원</p>
+        <span className="phone-number">0507-1488-8856</span>
+      </div>
+    </div>
+    <span className="distance"><b>거리:</b> 1.2km</span>
+  </div>
+
+  <div className="clinic">
+    <div className="clinic-left">
+      <img src={pin} alt="위치 아이콘" className="pin-icon" />
+      <div className="clinic-info">
+        <p>야호정신건강의학과의원</p>
+        <span className="phone-number">02-1234-5678</span>
+      </div>
+    </div>
+    <span className="distance"><b>거리:</b> 2.5km</span>
+  </div>
+
+  <button className="more-btn">더보기</button>
+</section>
+
+
 
       <section className="search-bar">
         <input type="text" placeholder="주변 운동시설 검색" />
-        <button>🔍</button>
+        <button><img src={search} alt="검색" className="search" /></button>
       </section>
+
+      <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+      <SwiperSlide>
+      <img src={deinfo1} alt="우울증 정보" className="deinfo" />
+      </SwiperSlide>
+      <SwiperSlide>
+      <img src={deinfo2} alt="우울증 정보" className="deinfo" />
+      </SwiperSlide>
+      <SwiperSlide>
+      <img src={deinfo3} alt="우울증 정보" className="deinfo" />
+      </SwiperSlide>
+    </Swiper>
 
       <section className="activity-summary">
         <h2>이번 달 활동량</h2>
