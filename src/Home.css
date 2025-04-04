@@ -251,18 +251,51 @@
     justify-content: center; 
     align-items: center;
   }
+
+  .mySwiper .swiper-pagination-bullet-active {
+    background-color: black !important;
+    width: 24px; 
+    height: 8px; 
+    background-color: black; 
+    opacity: 1;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
   
   /* 활동 요약 */
   .activity-summary {
-    text-align: center;
+    text-align: left;
+  }
+
+  .activity-boxs{
+    display: flex;
+    gap: 8px;
   }
   
   .activity-box {
     display: inline-block;
-    width: 45%;
-    background: #f0f0f0;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 10px;
+    width: 100%;
+    height: 100px;
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #f0f0f0;
   }
   
+  .activity-box p{
+    margin: 0px;
+    font-size: 16px;
+    color: #7f7f7f;
+  }
+  .activity-box h3{
+    margin-top: 17px;
+    margin-bottom: 17px;
+    font-size: 22px;
+  }
+  .activity-box span{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 16px;
+  }

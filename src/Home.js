@@ -119,16 +119,18 @@ const Home = () => {
 
       <section className="activity-summary">
         <h2>이번 달 활동량</h2>
-        <div className="activity-box">
-          <p>걸음 수</p>
-          <h3>12000</h3>
-          <span>+5%</span>
-        </div>
-        <div className="activity-box">
-          <p>운동 시간</p>
-          <h3>25시간</h3>
-          <span>-10%</span>
-        </div>
+        <div className="activity-boxs">
+          <div className="activity-box">
+            <p>걸음 수</p>
+            <h3>12000</h3>
+            <span>+5%</span>
+          </div>
+          <div className="activity-box">
+            <p>운동 시간</p>
+            <h3>25시간</h3>
+            <span>-10%</span>
+          </div>
+          </div>
       </section>
     </div>
   );

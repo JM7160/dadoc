@@ -8,6 +8,7 @@
     text-align: center;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
+    z-index: 1000;
   }
   .nav-home {
     color: white;
