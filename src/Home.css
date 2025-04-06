@@ -6,7 +6,7 @@
     font-style: normal;
   }
   @font-face {
-    font-family: 'normal'; 
+    font-family: 'normal';
     src: url('./fonts/PRETENDARD-LIGHT.OTF') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -31,7 +31,7 @@
   }
   
   /* 프로필 */
-  .profile-section {
+  .profile-section {  
     text-align: center;
     margin-bottom: 20px;
   }
@@ -43,6 +43,7 @@
   
   .profile-info p {
     margin-top: 0;
+    color:#7f7f7f;
   }
   
   
@@ -267,6 +268,10 @@
   /* 활동 요약 */
   .activity-summary {
     text-align: left;
+  }
+
+  .activity-summary h2{
+    font-size: 18px;
   }
 
   .activity-boxs{

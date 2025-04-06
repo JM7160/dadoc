@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import profileImg from "./image/profile.jpg";
 import med from "./image/med.png";
@@ -18,6 +19,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <div className="home-container">
       <header className="header">
@@ -33,7 +35,7 @@ const Home = () => {
           </div>
         </div>
         <div className="quick-actions">
-        <button>
+         <button onClick={() => navigate("/med/med")}>
           <img src={med} alt="약 정보" className="button-icon" />
           우울증 약 정보
         </button>
@@ -107,13 +109,13 @@ const Home = () => {
 
       <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
       <SwiperSlide>
-      <img src={deinfo1} alt="우울증 정보" className="deinfo" />
+      <img src={deinfo1} alt="우울증 정보1" className="deinfo" />
       </SwiperSlide>
       <SwiperSlide>
-      <img src={deinfo2} alt="우울증 정보" className="deinfo" />
+      <img src={deinfo2} alt="우울증 정보2" className="deinfo" />
       </SwiperSlide>
       <SwiperSlide>
-      <img src={deinfo3} alt="우울증 정보" className="deinfo" />
+      <img src={deinfo3} alt="우울증 정보3" className="deinfo" />
       </SwiperSlide>
     </Swiper>
 
