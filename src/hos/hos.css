@@ -1,64 +1,68 @@
+/* ---------------- 병원 섹션 ---------------- */
 .hos-section {
   margin-top: 20px;
-  border: #333;
 }
-.hos-section h2{
+
+.hos-section h2 {
   font-size: 18px;
 }
 
+/* ---------------- 카드 리스트 ---------------- */
 .hos-cards {
   display: flex;
   justify-content: space-around;
 }
 
-.hos-cards p {
+.hos-cards p,
+.hos-cards span {
   margin: 8px;
-  font-size: 12px;  
-  text-align: left; 
+  text-align: left;
+}
+
+.hos-cards p {
+  font-size: 12px;
 }
 
 .hos-cards span {
-  display: block;
-  margin: 8px;
   font-size: 13px;
-  text-align: left; 
-
+  display: block;
 }
 
+/* ---------------- 개별 카드 ---------------- */
 .hos-card {
-  width: 164px;  
+  width: 164px;
   height: 215px;
   text-align: center;
+  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 6px;
-  background: white;
 }
 
 .hos-card img {
   width: 164px;
   height: 140px;
+  object-fit: cover;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  object-fit: cover;
 }
 
+/* ---------------- 버튼 ---------------- */
 .call-button,
 .save-button {
   padding: 12px;
-  border-radius: 10px;
   font-size: 14px;
-  cursor: pointer;
+  border-radius: 10px;
   border: none;
+  cursor: pointer;
 }
 
-  
 .call-button {
-    background-color: #ffffff;
-    border: 1px solid #000;
-    color: #000;
-  }
-  
-  .save-button {
-    background-color: #000;
-    color: #fff;
-  }
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.save-button {
+  background-color: #000;
+  color: #fff;
+}
