@@ -47,7 +47,7 @@ const Home = () => {
           <img src={sos} alt="긴급 도움" className="button-icon" />
           긴급 도움 서비스
         </button>
-        <button>
+        <button onClick={() => navigate("/alarm/alarm")}>
           <img src={alarm} alt="약 복용 알림" className="button-icon" />
           약 복용 알림
         </button>
@@ -97,7 +97,7 @@ const Home = () => {
     <span className="distance"><b>거리:</b> 2.5km</span>
   </div>
 
-  <button className="more-btn">더보기</button>
+  <button onClick={() => navigate("/hos/hos")} className="more-btn">더보기</button>
 </section>
 
 

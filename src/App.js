@@ -5,6 +5,7 @@ import Home from "./Home";
 import Med from "./med/med";
 import Hos from "./hos/hos";
 import Sos from "./sos/sos";
+import Alarm from "./alarm/alarm";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/med/med" element={<Med />} />
       <Route path="/hos/hos" element={<Hos />} />
       <Route path="/sos/sos" element={<Sos />} />
+      <Route path="/alarm/alarm" element={<Alarm />} />
       </Routes>
     </Router>
   );
