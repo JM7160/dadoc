@@ -128,7 +128,8 @@
   .exercise-card img {
     width: 164px;
     height: 140px;
-    border-radius: 5px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
     object-fit: cover;
   }
   .exercise-tag {

@@ -39,7 +39,7 @@ const Home = () => {
           <img src={med} alt="약 정보" className="button-icon" />
           우울증 약 정보
         </button>
-        <button>
+        <button onClick={() => navigate("/hos/hos")}>
           <img src={hos} alt="정신과 찾기" className="button-icon" />
           주변 정신과 찾기
         </button>

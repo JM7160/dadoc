@@ -1,0 +1,64 @@
+.hos-section {
+  margin-top: 20px;
+  border: #333;
+}
+.hos-section h2{
+  font-size: 18px;
+}
+
+.hos-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hos-cards p {
+  margin: 8px;
+  font-size: 12px;  
+  text-align: left; 
+}
+
+.hos-cards span {
+  display: block;
+  margin: 8px;
+  font-size: 13px;
+  text-align: left; 
+
+}
+
+.hos-card {
+  width: 164px;  
+  height: 215px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+}
+
+.hos-card img {
+  width: 164px;
+  height: 140px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  object-fit: cover;
+}
+
+.call-button,
+.save-button {
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+
+  
+.call-button {
+    background-color: #ffffff;
+    border: 1px solid #000;
+    color: #000;
+  }
+  
+  .save-button {
+    background-color: #000;
+    color: #fff;
+  }
