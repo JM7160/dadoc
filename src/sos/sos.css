@@ -1,0 +1,89 @@
+.sos-container {
+    padding: 60px 16px 24px;
+    font-family: normal;
+    background-color: #fff;
+    padding-bottom: 80px;
+  }
+  
+  .map-box {
+    background-color: #f0f0f0;
+    height: 200px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .map-pin {
+    font-size: 24px;
+    color: #555;
+  }
+  
+  .map-label {
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+  }
+  
+  .emergency-call-button {
+    margin-top: 12px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .section-title {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .procedure-card {
+    all: unset; /* 버튼 기본 스타일 제거 */
+    padding: 12px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .procedure-card h4 {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .procedure-card p {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+  }
+
+  
+  .quick-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .quick-button {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+  }
+  

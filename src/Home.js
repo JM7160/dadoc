@@ -43,7 +43,7 @@ const Home = () => {
           <img src={hos} alt="정신과 찾기" className="button-icon" />
           주변 정신과 찾기
         </button>
-        <button>
+        <button onClick={() => navigate("/sos/sos")}>
           <img src={sos} alt="긴급 도움" className="button-icon" />
           긴급 도움 서비스
         </button>

@@ -4,6 +4,7 @@ import Nav from "./Nav";
 import Home from "./Home";
 import Med from "./med/med";
 import Hos from "./hos/hos";
+import Sos from "./sos/sos";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/med/med" element={<Med />} />
       <Route path="/hos/hos" element={<Hos />} />
+      <Route path="/sos/sos" element={<Sos />} />
       </Routes>
     </Router>
   );

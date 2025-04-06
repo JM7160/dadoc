@@ -6,7 +6,7 @@ import search from "../image/search.png";
 import hos1 from "../image/hos1.png";
 import hos2 from "../image/hos2.png";
 
-const Med = () => {
+const Hos = () => {
   const navigate = useNavigate();
 
   return (
@@ -43,4 +43,4 @@ const Med = () => {
   );
 };
 
-export default Med;
+export default Hos;
